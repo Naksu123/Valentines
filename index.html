@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>For You 🌹</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Great+Vibes&family=Nunito+Sans:wght@300;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <audio id="bgMusic" loop>
+        <source src="Love.mp3" type="audio/mp3">
+    </audio>
+
+    <div class="bg-gradient"></div>
+    <div class="bg-noise"></div>
+    <div class="floating-hearts">
+        <div class="f-heart h1">❤</div>
+        <div class="f-heart h2">💖</div>
+        <div class="f-heart h3">💕</div>
+        <div class="f-heart h4">💗</div>
+        <div class="f-heart h5">❤</div>
+    </div>
+
+    <div class="tilt-wrapper" id="tiltCard">
+        <div class="glass-panel">
+            <div class="glass-bg">
+                <div class="shine-sweep"></div>
+            </div>
+
+            <div class="main-content">
+                <div class="icon-3d">💝</div>
+                <h1>My Dearest Person</h1>
+                <p class="subtitle">A special delivery for you...</p>
+                <p class="question">Will you be my Valentine?</p>
+                <p class="response-text" id="responseText"></p>
+                
+                <div class="buttons" id="buttonContainer">
+                    <button id="yesBtn" class="btn-heart">
+                        <div class="heart-shape"></div>
+                        <span>YES!</span>
+                    </button>
+                    <button id="noBtn" class="btn-glass">No</button>
+                </div>
+            </div>
+
+            <div class="success-message" id="successMessage" style="display: none;">
+                <h2 class="celebration-text">It's a Date! 🥂</h2>
+                <p class="instruction" id="instruction">Tap the bottle to reveal the message</p>
+                
+                <div class="bottle-stage">
+                    <div class="bottle-container" id="bottleContainer">
+                        <div class="bottle-wrapper">
+                            <div class="cork"></div>
+                            <div class="bottle-neck">
+                                <div class="neck-highlight"></div>
+                            </div>
+                            <div class="bottle-shoulder"></div>
+                            <div class="bottle-body">
+                                <div class="glass-shine-left"></div>
+                                <div class="glass-shine-right"></div>
+                                <div class="liquid"></div>
+                                <div class="scroll-inside">
+                                    <div class="paper-roll"></div>
+                                    <div class="red-string"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button id="backBtn" class="btn-text">← Replay</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="letter-overlay" id="letterOverlay">
+        <div class="scroll-wrapper">
+            <div class="roll-top"></div>
+            <div class="letter-paper">
+                <div class="close-btn" id="closeLetter">✕</div>
+                <div class="paper-texture"></div>
+                <div class="letter-content">
+                    <div class="letter-header">
+                        <h2>My Valentine 💌</h2>
+                        <p class="date">February 14, 2026</p>
+                    </div>
+                    <div class="letter-body">
+                        <p class="greeting">To the one who holds my heart,</p>
+                        <p>I still can’t believe you said yes! From the moment our paths crossed, my world became brighter.</p>
+                        <div class="divider">⚜</div>
+                        <p>This Valentine’s Day isn't just a date; it's a celebration of you. I promise to bring the smiles, the chocolates, and all the love I have to give.</p>
+                        <p>Thank you for being my adventure, my comfort, and my favorite person.</p>
+                        <p class="ps">P.S. - I have a surprise waiting for you. Get ready!</p>
+                    </div>
+                    <div class="letter-sign">
+                        <p>Forever Yours,</p>
+                        <p class="sign-name">Lemonades 🍋</p>
+                    </div>
+                </div>
+            </div>
+            <div class="roll-bottom"></div>
+        </div>
+    </div>
+
+    <button id="musicControl" class="music-fab">🔇</button>
+    <script src="js/script.js"></script>
+</body>
+</html>
